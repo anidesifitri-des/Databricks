@@ -1,11 +1,34 @@
-# Databricks
-Spark Data Analytics and MLib 
+# Databricks Spark Data Analytics and MLib 
 
-1. Medallion Architecture 
-- Bronze : Import file from Kaggle onto Databricks Notebook (Bronze Layer) using Token APIs
-- Silver : Handle Duplication, Null Values, Remove Patient Name, RegEx(Regular Expression) and Add up Ingestion time, Filename, UUID (Patient ID)
-- Gold : Data Analytics
-2. Machine Learning 
+**End to End Healthcare Data Pipeline & Machine Learning**
+
+# Description
+* This project is Implemented end to end Data Pipeline by Leveraging Medallion Architecture (Bronze, Silver, Gold) and continuing to apply Machine Learning 
+* Dataset was used from Kaggle (Healthcare Dataset), with Batch Processing Method
+* Schema : Age, Gender, Blood Type, Medical Condition, Date of Admission, Doctor, Hospital, Insurance Provider, Billing Amount, Room Number, Admission Type, Discharge Date, Medication, Test Result 
+
+# Technology that used on this project
+* Environment : Databricks
+* Programming Language : Python (Apache Spark)
+* Storage : DBFS (Databricks File Management Systems - Databricks Cloud)
+  - Bronze Layer   : CSV to Parquet
+  - Silver Layer   : Parquet
+  - Gold Layer     : Parquet to Delta Lake
+* Machine Learning : Spark Mlib
+
+# Architecture Data (Medallion Architecture)  
+Pipeline divided into four steps
+- Bronze_Layer : Import raw data (CSV) from Kaggle onto Databricks Notebook (Bronze Layer) using Token APIs
+- Silver_Layer : Handle Duplication, Null Values, Format Standarization (Remove Patient Name, RegEx(Regular Expression) and Add up Ingestion time, Filename, UUID (Patient ID))
+- Gold_Layer   : Data Analytics
+  
+ <img width="975" height="600" alt="visualization" src="https://github.com/user-attachments/assets/c30416c4-f02f-41b3-a67d-c224ca79a3cb" />
+
+ <img width="859" height="547" alt="image" src="https://github.com/user-attachments/assets/a2eca235-1fe9-459a-9c4e-7667d1971245" />
+
+
+  
+# Machine Learning 
 - Feature Engineering (String Indexer, One Hot Encoding)
 - Apply Models (Linear Regression, Decision Tree)
 - Pipeline
