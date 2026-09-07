@@ -44,10 +44,34 @@ Pipeline divided into four steps
 
 # Machine Learning 
 * Feature Engineering
-  - Categorical Attributes : String Indexer (Label Encoding), One Hot Encoding (Binary Vectorixation)
+  - Categorical Attributes : String Indexer (Label Encoding), One Hot Encoding (Binary Vectorization)
   - Numerical Attributes : StandardScaler (Standardization)
-  - Vector Assembler :
-  - 
-* Apply Models (Linear Regression, Decision Tree)
-* Pipeline
-* Evaluate (R2 & RMSE)
+  - Vector Assembler
+  - Pipeline
+ 
+* Apply Models
+  - Decision Tree
+    - Features & Prediction
+      <img width="485" height="212" alt="image" src="https://github.com/user-attachments/assets/d47428a1-c6a0-43cb-80da-836489a4d7ae" />
+    - Feature Importances
+      <img width="1479" height="669" alt="image" src="https://github.com/user-attachments/assets/ad9b7684-6fbd-48aa-b350-1a3563baae0f" />
+    - Evaluation & Visualization
+      MAE : 7.49
+      R2  : -0.006049870367318855
+      1. Scatter Plot
+         <img width="1620" height="552" alt="image" src="https://github.com/user-attachments/assets/c27f1540-406d-40db-8e59-f27408436b18" />
+      2. Histogram
+  <img width="1620" height="552" alt="image" src="https://github.com/user-attachments/assets/3d3b8474-7de9-423b-9e14-731d9ea995d0" />
+
+  - Linear Regression
+    - Features & Prediction
+      <img width="648" height="216" alt="image" src="https://github.com/user-attachments/assets/72b242ae-b709-460a-adff-c3c6107577df" />
+
+    - Evaluation & Visualization
+      RMSE : 7.49
+      R2  : -0.00031921328563777607
+      1. Scatter Plot
+         <img width="1616" height="547" alt="image" src="https://github.com/user-attachments/assets/e5090598-6615-4d27-8c0d-68995de5298e" />
+
+         
+
