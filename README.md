@@ -2,6 +2,8 @@
 
 **End to End Healthcare Data Pipeline & Machine Learning**
 
+<img width="682" height="335" alt="image" src="https://github.com/user-attachments/assets/0dde2ce6-9f36-42fd-8113-5d00b8304b19" />
+
 # Description
 * This project is Implemented end to end Data Pipeline by Leveraging Medallion Architecture (Bronze, Silver, Gold) and continuing to apply Machine Learning 
 * Dataset was used from Kaggle (Healthcare Dataset), with Batch Processing Method
